@@ -1,0 +1,33 @@
+.searchRecipe .searchIcon {
+  color: #4a4a4a;
+  position: absolute;
+  right: 4%;
+  top: 21%;
+  cursor: pointer;
+  transform: rotate(90deg);
+}
+
+.searchIcon:hover{
+  color: var(--primary-color);
+}
+
+.searchRecipe .form-control {
+  border-radius: 10rem;
+  padding: 22px 20px;
+  box-shadow: 0 4px 10px rgba(160,160,160,0.5), 0 0 1px rgba(160,160,160, 0.5) inset;
+  outline: none;
+  border: none;
+}
+
+.searchRecipe .form-control:focus {
+  background-color: #efefef;
+  box-shadow: 0 4px 10px rgba(160,160,160,0.7), 0 0 1px rgba(160,160,160, 0.7) inset;
+  outline: none;
+  border: none;
+}
+
+.searchRecipe ::placeholder {
+  font-weight: 600;
+  color: #747474;
+  letter-spacing: 1px;
+}

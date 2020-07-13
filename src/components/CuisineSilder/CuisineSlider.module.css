@@ -1,0 +1,148 @@
+*:focus{
+    outline: none;
+}
+
+.header {
+    position: relative;
+    margin: 40px 0px;
+}
+
+.header h2 {
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    color: #484848;
+    font-size: 30px;
+}
+
+.header h2 > span {
+    color: var(--header-color);
+}
+
+
+.header h2::before{
+    content: "";
+    position: absolute;
+    width: 111px;
+    height: 1px;
+    bottom: -6px;
+    border-bottom: 2px solid #f53a14;
+}
+
+.arrowNext {
+    right: 34px;  
+}
+
+.arrowPrev {
+    left: 20px;
+    z-index: 1;
+}
+
+.arrowNext,.arrowPrev{
+    top: 47%;
+}
+
+.arrowPrev::before, .arrowNext::before{
+    opacity: 1;
+    font-size: 35px;
+}
+
+.cuisines{
+    margin: 0px 15px;
+    position: relative;
+}
+
+.cuisines img {
+    border-radius: 50%;
+}
+
+.cuisines::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 50%;
+  }
+
+  .cuisines:hover::before{
+    cursor: pointer;
+    background: rgba(114, 113, 113, 0.6);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(160,160,160,0.5), 0 0 1px rgba(160,160,160, 0.5) inset;
+ }
+
+.centered {
+    position: absolute;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  @media screen and (max-width:1199px) {
+    .arrowPrev::before, .arrowNext::before{
+        font-size: 30px;
+    }
+  }
+
+  @media screen and (max-width:992px) {
+    .arrowPrev::before, .arrowNext::before{
+        font-size: 25px;
+    }
+
+    .arrowNext,.arrowPrev{
+        top: 48%;
+    }
+
+    .header {
+        margin: 30px 0px;
+    }
+
+    .cuisines{
+        margin: 0px 10px;
+    }
+
+    .arrowNext {
+        right: 18px;  
+    }
+    
+    .arrowPrev {
+        left: 12px;
+    }
+  }
+
+  @media screen and (max-width:399px) {
+    .arrowNext {
+        right: 20px;  
+    }
+    
+    .arrowPrev {
+        left: 11px;
+    }
+
+    .arrowNext {
+        right: 19px;  
+    }
+    
+    .arrowPrev {
+        left: 13px;
+    }
+  }
+  
+  @media screen and (max-width:768px) {
+
+    .header h2{
+        font-size: 26px;
+    }
+
+    .header h2::before{
+        width: 100px;
+    }
+  }

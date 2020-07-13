@@ -1,0 +1,37 @@
+.modalWidth{
+    max-width: 100%;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0;
+    border-bottom: none;
+    right: 0%;
+    top:-22%;
+    padding: 0;
+}
+
+@media screen and (min-width: 576px) {
+    .modalWidth{
+        max-width: 90%;
+    }
+
+    .closeBtn {
+        right: -3.5%;
+        top:-9.5%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .modalWidth{
+        max-width: 75%;
+    }
+
+    .closeBtn {
+        right: -4.5%;
+        top:-6.5%;
+    }
+}
+

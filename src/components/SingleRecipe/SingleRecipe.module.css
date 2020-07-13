@@ -1,0 +1,115 @@
+.details{
+    display: flex;
+    justify-content: space-around;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+.singleRes h6 {
+    color: #ccc;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+}
+
+.time {
+    font-size: 13px;
+    color: #555;
+    letter-spacing: 1.1px;
+    font-weight: 500;
+}
+
+.value{
+    color: #B0B0B0;
+    font-size: 15px;
+}
+
+.bar {
+    padding: 25px;
+    font-size: 15px;
+}
+
+.nutritionName{
+    font-size: 14px;
+    position: absolute;
+    bottom: -4px;
+}
+
+  .listStyle {
+    list-style: none;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .listStyle li {
+      padding: 3px 0px;
+      color: #5a5a5a;
+      padding-left: 1.2rem;
+      text-indent: -0.935rem;
+  }
+
+  .listStyle li::before {
+    content: "";
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' %3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg height='512px' id='Layer_1'  style='enable-background:new 0 0 512 512;' fill='grey' version='1.1' viewBox='0 0 512 512' width='512px' xml:space='preserve' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpolygon points='160,128.4 192.3,96 352,256 352,256 352,256 192.3,416 160,383.6 287.3,256 '/%3E%3C/svg%3E");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: left center;
+    position: relative;
+    top: 0.08rem;
+  }
+
+  ol {
+    list-style: none;
+    list-style-position: outside;
+    width: 100%;
+  }
+  ol li {
+    counter-increment: steps;
+    color: #5a5a5a;
+    margin: 15px;
+    padding-left: 1.2rem;
+    text-indent: -2.26rem;
+  }
+  ol li::before {
+    content: counter(steps);
+    margin-right: 0.5rem;
+    color: grey;
+    width: 0.9rem;
+    height: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 4px 9px;
+    place-items: center;
+  }
+
+  @media screen and (max-width:400px) {
+    .nutritionName{
+      font-size: 12px;
+    }
+  }
+  
+@media screen and (max-width:768px) {
+	.singleRes h2 {
+		font-size: 1.7rem;
+	}	
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+	.nutritionName{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width:1199px) {
+	.bar {
+        padding: 10px;
+    }	
+
+    .nutritionName{
+        bottom: -15px;
+    }
+}
